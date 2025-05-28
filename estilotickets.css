@@ -13,7 +13,7 @@ h1 {
 .general {
         background-color: white;
         padding: 20px;
-        width: 350px;
+        width: 600px;
         margin: 20px auto;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         border-radius: 5px;
@@ -26,13 +26,16 @@ label {
         font-weight: bold;
     }
 
-input {
-        width: 100%;
-        padding: 8px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 
 .boton {
         margin-top: 15px;
@@ -53,3 +56,28 @@ select {
         background-color: #f1f1f1;
         margin: 10px auto;
         }
+
+button {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+.confirmacion {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 0; /* opcional, ya está por defecto */
+    padding-left: 0;
+}
+
+.confirmacion input[type="radio"] {
+    margin: 0 8px 0 0;  /* espacio entre radio y texto */
+    transform: scale(1.2); /* opcional: hace el radio un poco más visible */
+}
+
+.confirmacion label {
+    font-weight: bold;
+}

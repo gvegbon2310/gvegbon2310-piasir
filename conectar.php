@@ -1,9 +1,9 @@
 <?php
 //conexion base de datos
-    $servidor = 'localhost'; //poner tu ip si no funciona
-    $usuario = 'gvegbon_tickets';
+    $servidor = 'localhost'; //130.61.124.12
+    $usuario = 'gvegbon2310_tickets';
     $password = 'zxASqw12';
-    $basedatos = 'gvegbon_tickets';
+    $basedatos = 'gvegbon2310_tickets';
     $conexion = mysqli_connect($servidor, $usuario, $password, $basedatos);
 
     if (!$conexion){
