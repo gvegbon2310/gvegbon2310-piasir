@@ -1,23 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estiloformulario.css">
-    <title>SI</title>
-</head>
-<body>
-    <h1>Intranet tickets de incidencia</h1>
-    <div class="general">
-    <form action="login.php" method="post">
-        <label>Nombre de usuario: </label><br>
-        <input type="text" name="user" placeholder="Introduce tu nombre de usuario" required><br>
-        <label>Contraseña: </label><br>
-        <input type="text" name="password" placeholder="Introduce tu contraseña" required>
-        <div class="boton">
-            <input class="Entrar" type="submit" name="Entrar" id="Entrar" value="Iniciar sesión">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intranet de tickets</title>
+    <link rel="stylesheet" href="estiloindex.css" />
+  </head>
+  <body>
+
+    <!-- Contenedor principal que divide la pantalla en dos columnas -->
+    <div class="contenedor">
+
+      <!-- Panel izquierdo -->
+      <div class="panelizq">
+        <!-- Logo IES -->
+        <img src="./img/iesfuengirolan1.png" alt="logon1" class="logo" />
+
+        <h1>INTRANET - TICKETS</h1>
+
+        <h3>Gabriel Vega Bonilla</h3>
+
+      </div>
+
+      <!-- Panel derecho -->
+      <div class="panelder">
+
+        <div class="general">
+            <form action="login.php" method="post">
+                <label>Nombre de usuario: </label><br>
+                <input type="text" name="user" placeholder="Introduce tu nombre de usuario" required><br>
+                <label>Contraseña: </label><br>
+                <input type="text" name="password" placeholder="Introduce tu contraseña" required>
+                <div class="boton">
+                    <input class="Entrar" type="submit" name="Entrar" id="Entrar" value="Iniciar sesión">
+                </div>
+            </form>
         </div>
-    </form>
+      </div>
     </div>
-</body>
+  </body>
 </html>

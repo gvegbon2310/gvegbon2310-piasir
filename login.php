@@ -11,50 +11,23 @@
 
     //Hacemos un condicional que si la query en la base de datos sale una coincidencia es que efectivamente nuestro usuario y contraseñas son correctos 
     if (mysqli_num_rows($query) == 1){
-        echo "Inicio de sesión exitoso.<br>";
-        echo "Redireccionando...";
+        echo "<h2>✅ Inicio de sesión exitoso. ✅</h2><br>";
+        echo "<h3>Redireccionando... 🔄</h3>";
+        echo "<img src='./img/nubeserver.gif' alt='gifnube' name='gifnube'>";
         //Condicional en el caso positivo para ver si es admin o un usuario normal, si es el administrador te envia al panel para ver los tickets, si no te envía al formulario para poder enviar un ticket
         if ($usuario == 'admin'){
             //redireccion
-            header("refresh:2;url=analisisadmin.php");
+            header("refresh:3;url=analisisadmin.php");
         } else{
             //refresh es para que espere 3s antes de que 
-            header("refresh:2;url=tickets.html");
+            header("refresh:3;url=tickets.html");
         }
     } else {
-        echo "Inicio de sesión erróneo. El nombre de usuario y/o contraseña no son válidos.<br>";
-        echo "Redireccionando...";
+        echo "<h2>❌ Inicio de sesión erróneo. ❌</h2><br>";
+        echo "<h3>Redireccionando... 🔄</h3>";
+        echo "<img src='./img/cloud-error.gif' alt='gifnubeerror' name='gifnubeerror'>";
         header("refresh:2;url=index.html");
     }
 
     mysqli_close($conexion);
-
-
-
-
-    //chatgpt dice que puede dar errores el echo con el header refresh, asi que propone esto:
-    /* if (mysqli_num_rows($result) == 1) {
-    // Mostrar mensaje y redireccionar con HTML
-    echo '<!DOCTYPE html>
-    <html>
-    <head>
-        <meta http-equiv="refresh" content="3;url=pagina_bienvenida.php">
-        <title>Iniciando sesión</title>
-    </head>
-    <body>
-        <h2>Inicio de sesión exitoso. Serás redirigido en 3 segundos...</h2>
-    </body>
-    </html>';
-} else {
-    echo '<!DOCTYPE html>
-    <html>
-    <head>
-        <meta http-equiv="refresh" content="3;url=login.html">
-        <title>Error</title>
-    </head>
-    <body>
-        <h2>Usuario o contraseña incorrectos. Volviendo al login en 3 segundos...</h2>
-    </body>
-    </html>';
-}*/
 ?>

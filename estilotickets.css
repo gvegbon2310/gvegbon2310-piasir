@@ -5,7 +5,7 @@ body {
     }
 
 h1 {
-        color: rgb(100, 2, 2);
+        color: rgb(2, 48, 100);
         font-size: 24px;
         font-weight: bold;
     }
@@ -38,15 +38,22 @@ input[type="submit"] {
 }
 
 .boton {
-        margin-top: 15px;
-        display: flex;
-        justify-content: space-between;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
     }
 
 .Enviar {
-        background-color: rgb(148, 2, 2);
-        color: white;
+    background-color: rgb(2, 48, 100);
+    color: white;
+    transition: all 0.5s ease;
     }
+
+.Enviar:hover{
+    background-color: rgb(4, 73, 153);
+    box-shadow: 0 0 10px rgb(2, 48, 100), 0 0 20px rgb(2, 48, 100);
+    transform: scale(1.02);
+}
 
 select {
         width: 100%;

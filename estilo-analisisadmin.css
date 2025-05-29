@@ -1,0 +1,155 @@
+html, body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    /*background: linear-gradient(to bottom right, #fdfdfd, #a8a8a8);*/
+    background: linear-gradient(to bottom right, #f2f5cb, #526d09);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+h1 {
+    color: rgb(2, 100, 23);
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+/* Div que se muestra a la hora de hacer una consulta */
+.general {
+    background-color: white;
+    padding: 20px;
+    width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Div del botón de la consulta */
+.boton {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Botón de la consulta */
+.Entrar {
+    /*background-color: rgb(2, 148, 46);*/
+    background-color: rgb(69, 133, 44);
+    color: white;
+    transition: all 0.5s ease;
+}
+
+/* Hover del botón de la consulta de tickets */
+.Entrar:hover{
+    background-color: rgb(82, 160, 51);
+    box-shadow: 0 0 10px rgb(69, 133, 44) 0 0 20px rgb(69, 133, 44);
+    transform: scale(1.02);
+}
+
+/* Estilo para todo los selects que hay en la consulta */
+select {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    margin: 10px auto;
+}
+
+/* CSS para mostrar los tickets correctamente */
+.divticket1 {
+    background-color: white;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.contenedor-tickets {
+    display: flex;
+    flex-wrap: wrap;         /* Permite que bajen a otra línea */
+    gap: 20px;               /* Espacio entre los tickets */
+    justify-content: flex-start; /* Alinea a la izquierda */
+    padding: 20px;
+}
+
+.divticket {
+    background-color: white;
+    padding: 15px;
+    /*width: 400px;*/         /* Ancho fijo o flexible */
+    flex: 1 1 300px;
+    min-width: 300px;
+    max-width: 450px;
+    max-height: 500px;        /* Altura máxima para evitar que se alargue demasiado */
+    overflow-y: auto;         /* Scroll interno si se pasa */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    /*prueba*/
+    transition: all 0.4 ease;
+}
+
+/* Hover del div de ticket */
+.divticket:hover{
+    background-color: white;
+    box-shadow: 0 0 10px #000000 0 0 20px #000000;
+    transform: scale(1.02);
+}
+
+/* Título ticket */
+.tituloticket{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Texto del ticket */
+.h3ticket {
+    color: rgb(2, 100, 23);
+    text-align: left;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+/* Botones de para volver al login y volver a la consulta */
+.botonfinal {
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    /*background-color: rgb(20, 175, 53);*/
+    background-color: rgb(69, 133, 44);
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    margin-right: 7.5px;
+    margin-left: 7.5px;
+    transition: all 0.5s ease;
+}
+
+/* Hover botones abajo */
+.botonfinal:hover{
+    background-color: rgb(82, 160, 51);
+    box-shadow: 0 0 10px rgb(69, 133, 44) 0 0 20px rgb(69, 133, 44);
+    transform: scale(1.02);
+}

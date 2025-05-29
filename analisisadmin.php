@@ -43,7 +43,7 @@
     if($query){
         while($fila = mysqli_fetch_assoc($query)){
             echo "<div class='divticket'>";
-            echo "<h3 class='h3ticket'>ID: </h3><p>".$fila['ID']."</p><br>";
+            echo "<h2 class='tituloticket'>Ticket Nº".$fila['ID']."</h2>";
             echo "<h3 class='h3ticket'>Título: </h3><p>".$fila['titulo']."</p><br>";
             echo "<h3 class='h3ticket'>Tipo: </h3><p>".$fila['tipo']."</p><br>";
             echo "<h3 class='h3ticket'>Descripción: </h3><p>".$fila['descripcion']."</p><br>";
@@ -67,15 +67,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estiloformulario.css">
+    <link rel="stylesheet" href="estilo-aadminsss.css">
     <title>Panel de administración de tickets</title>
 </head>
 <body>
     <?php if($mostrarform){ ?>
 
-    <h1>Panel de administración de tickets</h1>
+    
 
     <div class="general">
+        <h1>Panel de administración de tickets</h1>
         <form action="#" method="post">
             <label>Elige el filtrado para los tickets: </label><br>
             <select name="tipoticket" required>
