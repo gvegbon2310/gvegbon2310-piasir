@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+    flex-direction: column;
+    text-align: center;
+}
+
+.correcto {
+    color: rgb(2, 48, 100);
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+/*.correcto {
+    color: #2e7d32;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.erroneo {
+    color: #eb1414;
+    font-size: 24px;
+    margin-bottom: 30px;
+}*/
+
+/* Contenedor div para los botones */
+.div-botones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* CSS de los botones */
+.botones {
+    padding: 12px 28px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+    min-width: 120px;
+    color: white;
+    display: inline-block;
+    background-color: rgb(2, 48, 100);
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+
+.botones:hover{
+    background-color: rgb(4, 73, 153);
+    box-shadow: 0 0 10px rgb(2, 48, 100), 0 0 20px rgb(2, 48, 100);
+    transform: scale(1.02);
+}
+
+/* Estilos del gif */
+.gif {
+  width: 200px;
+  height: 200px; 
+  margin-top: 30px;  
+}

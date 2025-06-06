@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+  flex-direction: column;
+}
+
+/* Estilo de los mensajes */
+.correcto {
+  color: #2e7d32;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.erroneo {
+  color: #eb1414;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h3 {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+
+/* Estilo del gif */
+img {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+}

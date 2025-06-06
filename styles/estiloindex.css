@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+/* Contenedor principal (dos columnas) */
+.contenedor {
+  display: flex; /* hace dos columnas */
+  height: 100vh; /* ocupa toda la pantalla */
+}
+
+/* Panel izquierdo */
+.panelizq {
+  flex: 1; /* ocupa el 50% del ancho */
+  background: #fff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column; /* contenido vertical */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Logo IES */
+img {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+/* Título intranet */
+.panelizq h1 {
+  color: #335;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+/* Descripción */
+.panelizq h3 {
+  color: #555;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Panel derecho */
+.panelder {
+  flex: 1; /* otro 50% del ancho */
+  /*background: linear-gradient(to bottom right, #0047ab, #00bcd4);*/
+  background: linear-gradient(to bottom right, #0f5a00, #00c21a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+/* Div login */
+.general {
+  background-color: white;
+  padding: 20px;
+  width: 350px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+/* Texto nombre usuario y contraseña */
+label {
+  display: block;
+  text-align: left;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* Inputs de texto */
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Div del botón de la consulta */
+.boton {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Botón de la consulta */
+.Entrar {
+  background-color: rgb(2, 148, 46);
+  color: white;
+  transition: all 0.5s ease;
+}
+
+/* Hover boton */
+.Entrar:hover{
+  box-shadow: 0 0 10px rgb(2, 148, 46), 0 0 20px rgb(2, 148, 46);
+  transform: scale(1.02);
+}
+
+/* Estilo para todo los selects que hay en la consulta */
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  margin: 10px auto;
+}
