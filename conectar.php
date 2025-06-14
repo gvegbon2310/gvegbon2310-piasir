@@ -1,6 +1,6 @@
 <?php
 //conexion base de datos
-    $servidor = 'localhost'; //130.61.124.12
+    $servidor = 'localhost';
     $usuario = 'gvegbon2310_tickets';
     $password = 'zxASqw12';
     $basedatos = 'gvegbon2310_tickets';

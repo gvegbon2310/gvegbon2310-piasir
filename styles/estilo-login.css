@@ -11,23 +11,25 @@ body {
 }
 
 /* Estilo de los mensajes */
+
 .correcto {
   color: #2e7d32;
-  font-size: 24px;
+  font-size: 32px;
   margin-bottom: 10px;
   text-align: center;
-}
+}  
 
 .erroneo {
   color: #eb1414;
-  font-size: 24px;
+  font-size: 32px;
   margin-bottom: 10px;
   text-align: center;
 }
 
+/* Estilo de la frase de redireccionando */
 h3 {
   color: #555;
-  font-size: 18px;
+  font-size: 24px;
   margin-bottom: 20px;
   font-weight: normal;
   text-align: center;
@@ -35,8 +37,8 @@ h3 {
 
 /* Estilo del gif */
 img {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   display: block;
   margin: 0 auto;
 }

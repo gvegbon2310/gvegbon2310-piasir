@@ -4,12 +4,13 @@ body {
     background-color: #555555;
 }
 
+/* Titulo del formulario */
 h1 {
     color: rgb(2, 48, 100);
     font-size: 24px;
     font-weight: bold;
 }
-
+/* Div que contiene todo lo demás, inputs, labels, botones... */
 .general {
     background-color: white;
     padding: 20px;
@@ -26,6 +27,7 @@ label {
     font-weight: bold;
 }
 
+/* Estilo para que se aplique sólo en los inputs de esos tipos (sirve para que el último salga correctamente) */
 input[type="text"],
 input[type="date"],
 input[type="time"],
@@ -36,13 +38,14 @@ input[type="submit"] {
     border-radius: 4px;
     box-sizing: border-box;
 }
-
+/* Estilo del div que contiene el botón del enviar la información */
 .boton {
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
-    }
+}
 
+/* Estilo botón de enviar */
 .Enviar {
     background-color: rgb(2, 48, 100);
     color: white;
@@ -55,6 +58,7 @@ input[type="submit"] {
     transform: scale(1.02);
 }
 
+/* Estilo del select del tipo de incidencia */
 select {
     width: 100%;
     padding: 16px 20px;
@@ -64,14 +68,7 @@ select {
     margin: 10px auto;
 }
 
-button {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
+/* Estilo de confirmación de la información (botón radial) */
 .confirmacion {
     display: flex;
     align-items: center;

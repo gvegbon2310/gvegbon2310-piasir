@@ -55,7 +55,6 @@ if (!$mostrarform && isset($_POST['tipoticket'])) {
     <link rel="stylesheet" href="./styles/estilo-graficas.css" />
     <title>Visualizando gráficas...</title>
     <style>
-        /* PONER EN estilo-graficas.css???????????*/
         #contenedor_graficas {
             display: flex;
             justify-content: center;

@@ -1,7 +1,6 @@
 html, body {
     font-family: Arial, sans-serif;
     text-align: center;
-    /*background: linear-gradient(to bottom right, #fdfdfd, #a8a8a8);*/
     background: linear-gradient(to bottom right, #9fe2e7, #1d79c4);
     background-color: rgba(0, 0, 0, 0.5);
     background-attachment: fixed;
@@ -51,7 +50,6 @@ input {
 
 /* Botón de la consulta */
 .Entrar {
-    /*background-color: rgb(2, 148, 46);*/
     background-color: rgb(69, 133, 44);
     color: white;
     transition: all 0.5s ease;
@@ -88,23 +86,24 @@ select {
     border-radius: 5px;
 }
 
+/* Div que contiene todos los tickets que se muestran */
 .contenedor-tickets {
     display: flex;
-    flex-wrap: wrap;         /* Permite que bajen a otra línea */
-    gap: 20px;               /* Espacio entre los tickets */
-    justify-content: flex-start; /* Alinea a la izquierda */
+    flex-wrap: wrap;         
+    gap: 20px;              
+    justify-content: flex-start; 
     padding: 20px;
 }
 
+/* Estilo del div de cada ticket mostrado */
 .divticket {
     background-color: white;
-    padding: 15px;
-    /*width: 400px;*/         /* Ancho fijo o flexible */
+    padding: 15px;      
     flex: 1 1 300px;
     min-width: 300px;
     max-width: 450px;
-    max-height: 500px;        /* Altura máxima para evitar que se alargue demasiado */
-    overflow-y: auto;         /* Scroll interno si se pasa */
+    max-height: 500px;       
+    overflow-y: auto;        
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     display: flex;
@@ -112,8 +111,7 @@ select {
     box-sizing: border-box;
     margin-bottom: 10px;
     transition: all 0.4 ease;
-    /*pruebas estilos 3/6/25*/
-    background: linear-gradient(180deg, #ffffff, #afafaf);
+    background-image: url(../img/fondoticket.jpg);
 }
 
 /* Hover del div de ticket */

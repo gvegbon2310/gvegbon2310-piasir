@@ -1,4 +1,5 @@
 <?php
+if ($_POST){
     include 'conectar.php';
 
     //Incluimos el css externo
@@ -35,4 +36,7 @@
     }
 
     mysqli_close($conexion);
+ } else {
+    header("Location: index.html");
+}
 ?>
